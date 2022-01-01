@@ -148,6 +148,46 @@
         </div>
       </div>
 
+      <section id="my-keyboards">
+        <div class="container">
+          <div class="row text-center mb-3">
+            <div class="col">
+              <h2>My Keyboards</h2>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="keyboard-box">
+                <h4 class="keyboard-name">Keychron K2</h4>
+
+                <img class="keyboard-img" src="assets/img/keyboard-1.png" alt="Keychron K2" />
+
+                <a class="btn btn-light keyboard-details" href="#">Show Details</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="keyboard-box">
+                <h4 class="keyboard-name">Womier RGB</h4>
+
+                <img class="keyboard-img" src="assets/img/keyboard-2.png" alt="Womier RGB" />
+
+                <a class="btn btn-light keyboard-details" href="#">Show Details</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="keyboard-box">
+                <h4 class="keyboard-name">Red Dragon</h4>
+
+                <img class="keyboard-img" src="assets/img/keyboard-3.png" alt="Red Dragon" />
+
+                <a class="btn btn-light keyboard-details" href="#">Show Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#fff"
@@ -341,6 +381,15 @@
             console.log("Success!", response);
           })
           .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+
+    <!-- Vanilla Tilt JS -->
+    <script type="text/javascript" src="assets/js/vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".keyboard-box"), {
+        max: 25,
+        speed: 400,
       });
     </script>
   </body>
