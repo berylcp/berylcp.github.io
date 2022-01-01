@@ -1,3 +1,7 @@
+section {
+  padding-top: 5rem;
+}
+
 /* Jumbotron */
 .jumbotron {
   padding-top: 6rem;
@@ -11,6 +15,13 @@
 }
 /* Projects Close */
 
-section {
-  padding-top: 5rem;
+/* Gallery */
+.gallery-img {
+  width: 100%;
 }
+
+#gallery .row > * {
+  padding: 0;
+}
+
+/* Gallery Close */
